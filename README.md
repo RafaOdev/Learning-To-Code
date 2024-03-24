@@ -6,6 +6,13 @@
 <h1>PROGRESS OF THE PROJECT</h1>
 <P>We are currently in the development phase of the user registration and login system, which will have complete integration with the MySQL database. We highlight that security is a priority and, therefore, the system algorithm will have several rigorous checks of user input data. Additionally, when inserted into the database, user passwords will go through an encryption process, aiming to prevent any possible hacking of user accounts. This additional care is crucial to guarantee the protection and privacy of our users' data. It is worth noting that the data about the database contained in this code is for testing purposes only and will not be data from the platform's main database.</P>
 
-<h1>IMAGE OF PROJECT</h1>
+<h1>IMAGES OF PROJECT</h1>
 
-<img scr="![Screenshot 2024-03-24 154118](https://github.com/RafaOdev/Learning-To-Code/assets/132023935/8ea1e611-7911-43b0-92ee-b585aa2236c0)">
+<h3>SignUp</h2>
+
+
+![Screenshot 2024-03-24 154118](https://github.com/RafaOdev/Learning-To-Code/assets/132023935/7a8a0d5f-6867-41f0-ac24-834e38911f3d)
+
+<h3>Login</h3>
+
+![Screenshot 2024-03-24 154100](https://github.com/RafaOdev/Learning-To-Code/assets/132023935/7f8adfee-5121-4c1e-9f3b-d54e8f2a74df)
