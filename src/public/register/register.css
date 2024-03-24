@@ -1,0 +1,197 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    height: 100vh;
+    animation: opacity 1s;
+}
+
+.container{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 10px 1px #000000;
+    border-radius: 15px;
+    width: 500px;
+    height: 750px;
+}
+
+.container h1{
+    position: relative;
+    color: #000000;
+    bottom: 160px;
+    right: 150px;
+    margin: 20px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.inputs{
+    position: relative;
+    top: 20px;
+}
+
+input{
+    width: 390px;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    text-align: center;
+    border-bottom: 1px solid black;
+    outline: 0;
+    border-radius: 5px;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+i{
+    font-size: 25px;
+}
+
+::placeholder{
+    font-size: 20px;
+    text-align: center;
+}
+
+button{
+    width: 300px;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+    outline: 0;
+    border-radius: 9999px;
+}
+
+.container .name{
+    position: relative;
+    bottom: 110px;
+    right: 10px;
+}
+
+.container .name i{
+    position: relative;
+    bottom: 30px;
+    left: 30px;
+}
+
+.container .email{
+    position: relative;
+    bottom: 40px;
+    right: 10px;
+}
+
+.container .email i{
+    position: relative;
+    bottom: 30px;
+    left: 30px;
+}
+
+.container .password{
+    position: relative;
+    top: 40px;
+    right: 10px;
+}
+
+.container .password i{
+    position: relative;
+    bottom: 30px;
+    left: 30px;
+}
+
+.password .showPass button{
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    font-size: 25px;
+    left: 370px;
+    width: 50px;
+    bottom: 65px;
+}
+
+.container .submit{
+    position: relative;
+    top: 100px;
+}
+
+.container .submit button{
+    background: linear-gradient(90deg, #F0C952, #FFF071), #F4C342;
+    font-size: 20px;
+    border: none;
+}
+
+.container .Git button{
+    background-color: rgb(207, 202, 202);
+    position: relative;
+    text-align: center;
+}
+
+.container .Git button i{
+    position: relative;
+    right: 5px;
+}
+
+.container .google button{
+    background-color: rgb(207, 202, 202);
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+
+.container .google button i{
+    position: relative;
+    right: 5px;
+}
+
+.container .outhers{
+    position: relative;
+    text-align: center;
+    top: 130px;
+}
+
+#input__name.invalidName{
+    border-bottom: 1px solid red;
+}
+
+#input__email.invalidEmail{
+    border-bottom: 1px solid red;
+}
+
+#input__pass.invalidPassword{
+    border-bottom: 1px solid red;
+}
+
+.login{
+    position: relative;
+    left: 100px;
+    top: 10px;
+}
+
+.error{
+    display: flex;
+    justify-content: center;
+    color: red;
+    position: absolute;
+    width: 350px;
+    font-family: 16px;
+    font-weight: 600;
+    margin-top: 30px;
+    left: 35px;
+}
+
+@keyframes opacity{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

@@ -1,0 +1,141 @@
+body{
+    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 1px 1px 10px 1px #000000;;
+    width: 500px;
+    height: 750px;
+    border-radius: 10px;
+}
+
+input{
+    width: 390px;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    text-align: center;
+    border-bottom: 1px solid black;
+    outline: 0;
+    border-radius: 5px;
+}
+
+button{
+    width: 300px;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+    border-radius: 9999px;
+}
+
+h1{
+    position: relative;
+    color: #000000;
+    bottom: 140px;
+    right: 150px;
+    margin: 20px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+i{
+    font-size: 25px;
+}
+
+.email{
+    position: relative;
+    bottom: 120px;
+}
+
+.container .email i{
+    position: relative;
+    bottom: 30px;
+    left: 30px;
+}
+
+.inputs{
+    position: relative;
+    top: 50px;
+}
+
+.password{
+    position: relative;
+    bottom: 40px;
+}
+
+.container .password i{
+    position: relative;
+    bottom: 30px;
+    left: 30px;
+}
+
+.password .showPass{
+    position: relative;
+    left: 370px;
+    bottom: 65px;
+}
+
+.password .showPass button{
+   background: transparent;
+   border: none;
+   font-size: 25px;
+   width: 50px;
+}
+.outhers{
+    position: relative;
+    top: 90px;
+}
+
+.submit{
+    position: relative;
+    top: 50px;
+}
+
+.submit button{
+    background: linear-gradient(90deg, #F0C952, #FFF071), #F4C342;
+    font-size: 20px;
+}
+
+.signup{
+    position: relative;
+    top: 130px;
+}
+
+.Git{
+    position: relative;
+    top: 20px;
+}
+
+.google{
+    position: relative;
+    top: 40px;
+}
+
+.forgot{
+    position: relative;
+    bottom: 20px;
+    left: 30px;
+}
+
+.inputs{
+    position: relative;
+    top: 50px;
+}
+
+.error{
+    color: red;
+    position: absolute;
+    top: 500px;
+}
