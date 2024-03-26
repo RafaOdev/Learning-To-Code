@@ -14,6 +14,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.post('/register', database.verifyUser);
 app.use('/sendCode', sendEmail.sendCode);
 app.post('/datas', database.registerUser);
+app.post('/login', database.loginUsers);
+app.use('/codeLogin', sendEmail.loginCode);
+app.post('/email', sendEmail.loginUser);
 
 app.use(express.static(path.join(__dirname, './src/public')));
 app.use(router);

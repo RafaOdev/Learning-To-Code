@@ -1,0 +1,95 @@
+body{
+    display: flex;
+    background-color: #e2e2e2;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 550px;
+    height: 350px;
+}
+
+.texts{
+    position: relative;
+    top: 10px;
+}
+
+
+h1{
+    position: relative;
+    color: #000000;
+    bottom: 70px;
+    left: 20px;
+    margin: 20px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+p{
+    position: relative;
+    color: #000000;
+    bottom: 70px;
+    font-size: 18px;
+}
+
+.p2{
+    position: relative;
+    bottom: 60px;
+}
+
+input{
+    position: relative;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: 0;
+    font-size: 20px;
+    bottom: 20px;
+    left: 80px;
+    width: 150px;
+    height: 30px;
+}
+
+input.invalidCode{
+    border-bottom: 1px solid red;
+}
+
+.error{
+    width: 130px;
+    position: relative;
+    top: 20px;
+    left: 110px;
+    color: red;
+    font-weight: 600;
+    font-size: 15px;
+    animation: opacity 1s;
+}
+
+button{
+    position: relative;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(90deg, #F0C952, #FFF071), #F4C342;
+    border-radius: 9999px;
+    width: 200px;
+    height: 30px;
+    left: 60px;
+    top: 50px;
+}
+
+@keyframes opacity{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

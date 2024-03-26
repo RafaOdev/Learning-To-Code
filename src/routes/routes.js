@@ -11,6 +11,12 @@ router.get('/login/', (req, res) => {
     res.sendFile(LoginPath);
 })
 
+
+router.get('/login/validation/', (req, res) => {
+    const validationPathLogin = path.join(__dirname, '../public/validation/loginValidation.html');
+    res.sendFile(validationPathLogin);
+})
+
 router.get('/signup/', (req, res) => {
     const signupPath = path.join(__dirname, '../public/register/register.html');
     res.sendFile(signupPath);

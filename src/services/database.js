@@ -35,6 +35,8 @@ function verifyUser(req, res){
 }
 
 
+
+
 function registerUser(req, res) {
     const { name, email, pass } = req.body;
 
@@ -56,4 +58,45 @@ function registerUser(req, res) {
     });
 }
 
-module.exports = { verifyUser, registerUser }
+
+
+
+function loginUsers(req, res){
+    const { email, pass } = req.body;
+
+    connection.query('SELECT * FROM usersdatas WHERE usersEmails = ?', [email], (err, result) => {
+        if(err){
+            res.status(400).json({error: 404})
+        }else {
+            if(result.length > 0){
+                bcrypt.compare(pass, result[0].usersPass, (err, result) => {
+                    if(err){
+                        res.status(400).json({error: 404})
+                    }else {
+                        if(result){
+                            res.json({
+                                user: 200,
+                                pass: 200,
+                                credential: 'approved'
+                            })
+                        }else {
+                            res.json({
+                                user: 404,
+                                email: 200,
+                                pass: 400,
+                                credential: 'denied'
+                            })
+                        }
+                    }
+                })
+            } else {
+                res.json({
+                    user: 404,
+                    email: 400
+                })
+            }
+        }
+    })
+}
+
+module.exports = { verifyUser, registerUser, loginUsers }
